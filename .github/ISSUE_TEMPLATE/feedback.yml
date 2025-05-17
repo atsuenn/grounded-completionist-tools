@@ -1,0 +1,16 @@
+name: 💬 Feedback / Suggestions
+description: Share an idea, comment, or suggestion for improving the site or content
+title: "[Feedback] "
+labels: [feedback]
+body:
+  - type: textarea
+    attributes:
+      label: What would you like to share?
+      description: Describe your suggestion or feedback.
+      placeholder: "I’d love to see a checklist for XYZ..."
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: (Optional) Your name or GitHub/Discord
+      description: For credit or follow-up
