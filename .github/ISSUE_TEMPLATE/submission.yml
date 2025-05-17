@@ -1,0 +1,28 @@
+name: 📝 New Submission
+description: Submit a new spreadsheet, checklist, or other content
+title: "[Submission] "
+labels: [submission]
+body:
+  - type: input
+    attributes:
+      label: Title of your submission
+      placeholder: "e.g. Trinket Tracker Spreadsheet"
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Description of your submission
+      description: What is this, and why should it be added?
+      placeholder: "A tracker for all trinkets with rarity filters..."
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Link to file or resource
+      placeholder: "https://example.com/..."
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Your name or handle (optional)
+      description: So we can give you credit!
