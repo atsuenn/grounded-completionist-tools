@@ -16,3 +16,15 @@ toggle.addEventListener('click', () => {
     const currentTheme = body.classList.contains('light') ? 'light' : 'dark';
     localStorage.setItem('theme', currentTheme);
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Add click handlers to all card headers
+    document.querySelectorAll(".card-dropdown .card-header").forEach(header => {
+        header.addEventListener("click", () => {
+            const card = header.closest(".card-dropdown");
+            if (card) {
+                card.classList.toggle("open");
+            }
+        });
+    });
+});

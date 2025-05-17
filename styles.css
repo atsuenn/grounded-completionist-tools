@@ -113,6 +113,52 @@ nav a {
     border-radius: 0.75rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
 }
+
+.card-dropdown .card-header{
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-dropdown .card-body {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease , opacity 0.4s ease;
+}
+
+.card-dropdown.open .card-body {
+    max-height: 1000px;
+    opacity: 1;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.card-header h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.arrow-icon {
+    display: inline-block;
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+    transform: rotate(90deg);
+}
+
+.card-dropdown.open .arrow-icon {
+    transform: rotate(0deg);
+}
+
 .card a {
     text-align: right;
 }
